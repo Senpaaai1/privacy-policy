@@ -154,7 +154,7 @@
   <header>
     <div class="app-name">Car Service History</div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: April 7, 2026 &nbsp;·&nbsp; Last updated: April 7, 2026</p>
+    <p class="meta">Effective date: April 7, 2026 &nbsp;·&nbsp; Last updated: April 10, 2026</p>
   </header>
 
   <div class="summary-box">
@@ -312,8 +312,14 @@
   <!-- 6. BACKUP -->
   <section>
     <h2>6. Backup and Data Export</h2>
-    <p>The App includes a manual backup feature that allows you to export all your data as a single JSON file. This export is <strong>initiated exclusively by you</strong> — it never happens automatically.</p>
-    <p>When you trigger a backup, the App creates a file on your device and presents the standard Android sharing sheet. You may then choose to:</p>
+    <p>The App includes manual export features that allow you to export your data in several formats. All exports are <strong>initiated exclusively by you</strong> — they never happen automatically.</p>
+    <p>The App offers three export options:</p>
+    <ul>
+      <li><strong>JSON backup</strong> — exports all your data as a single JSON file for backup and restore purposes;</li>
+      <li><strong>PDF report</strong> — generates a formatted report of your vehicle's service history as a PDF file;</li>
+      <li><strong>Excel report (.xlsx)</strong> — generates a structured spreadsheet with service history, document expiry dates, and cost summaries for all your vehicles.</li>
+    </ul>
+    <p>When you trigger an export, the App creates a file on your device and presents the standard Android sharing sheet. You may then choose to:</p>
     <ul>
       <li>Save the file to a local folder on your device (via the Storage Access Framework);</li>
       <li>Share it to Google Drive or any other app available in your sharing sheet.</li>
@@ -353,6 +359,7 @@
       <li>expo-print — local PDF generation</li>
       <li>expo-document-picker — file selection for backup import (system picker, no data transmitted)</li>
       <li>expo-haptics — device vibration feedback on user actions</li>
+      <li>xlsx-js-style — local Excel (.xlsx) file generation for data export</li>
       <li>expo-localization — detects device language to display the correct app language</li>
       <li>expo-splash-screen — controls the app launch screen</li>
       <li>expo-store-review — prompts users to rate the app on Google Play (no personal data collected or transmitted)</li>
